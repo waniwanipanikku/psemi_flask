@@ -13,12 +13,12 @@
 
 {% for task in tasks %}
 <div class="task">
-<h2>Title: {{ task.title}}</h2>
-<p>Details: {{ task.details}}</p>
-<div class="task-buttons"></div>
-<a href="/delete/{{ task.id }}" class="btn">Delete</a>
-<a href="/edit/{{ task.id }}" class="btn">Edit</a>
-</div>
-</div>
+    <h2>Title: {{ task.title}}</h2>
+    <p>Details: {{ task.details}}</p>
+    <div class="task-buttons"></div>
+    <a href="/delete/{{ task.id }}" class="btn">Delete</a>
+    <a href="/edit/{{ task.id }}" class="btn">Edit</a>
+    </div>
+    </div>
 {% endfor %}
 {% endblock %}
