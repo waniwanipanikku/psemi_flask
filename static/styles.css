@@ -1,0 +1,104 @@
+/* 全体のスタイル */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Bootstrap-like light background */
+    margin: 20px;
+    padding: 0px;
+}
+
+h1 {
+    color: #343a40; /* Dark gray color */
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* フォームのスタイル */
+.form {
+    background: #ffffff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"], textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button, input[type="submit"] {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #0056b3; /* Darker primary color */
+}
+
+/* タスクのカードデザイン */
+.task {
+    background: #ffffff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 軽い影を追加 */
+    transition: box-shadow 0.3s ease, transform 0.2s ease; /* 影と浮き上がる動きを追加 */
+}
+
+.task:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* ホバー時の影を濃く */
+    transform: translateY(-2px); /* ホバー時に少し浮き上がる効果 */
+}
+
+.task h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #343a40;
+}
+
+.task p {
+    margin: 5px 0 10px;
+    font-size: 14px;
+    color: #6c757d;
+}
+
+/* ボタン（Delete, Edit）のスタイル */
+.task-buttons {
+    display: flex;
+    gap: 10px; /* ボタン間のスペース */
+}
+
+a.btn {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none; /* リンクの下線を削除 */
+    display: inline-block; /* ボタン風のレイアウトにする */
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+a.btn:hover {
+    background-color: #0056b3; /* Darker primary color */
+    transform: translateY(-2px); /* ボタンのホバー時に少し浮き上がる */
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 20px auto;
+    width: 80%;
+}
